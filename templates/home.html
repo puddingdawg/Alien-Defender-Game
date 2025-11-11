@@ -1,0 +1,15 @@
+{% extends "nav.html" %}
+{% block content %}
+
+<h1 class="title">Play the Game!</h1>
+<div class="container">
+    <div id="cc" class="canvasCon">
+        <canvas id="board"></canvas>
+            <button id="start-btn" onclick="startGame()">Press Start</button>
+            
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/game.js')}}"></script>
+
+{% endblock %}

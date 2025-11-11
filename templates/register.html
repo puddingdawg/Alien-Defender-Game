@@ -1,0 +1,27 @@
+{% extends "nav.html" %}
+{% block content %}
+
+<div class="registerpg">
+    <h1 class="regTitle"> Register</h1>
+    <form action="/api/register" method="POST">
+        <label> Username:</label>
+        <input type="text" name="username" placeholder="Choose a username" required/>
+        <br>
+        <label>Password:</label>
+        <input  type="password" name="password" placeholder="Choose a password" required/>
+        <br>
+        <input type="submit" value="Submit" id="submitbtn"/>
+    </form>
+</div>
+
+{% with messages = get_flashed_messages(with_categories = True) %}
+{% if messages %} 
+<ul class=flashes>
+    {%for catagory, message in messages %} 
+    <div> {{ catagory}} - {{message}}</div>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+
+{% endblock %}

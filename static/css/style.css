@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: courier;
+    background-image: url(../image/bg.jpeg);
+}
+
+.nav {
+   background: black;
+   display: flex ;
+   align-items: center;
+}
+
+.logo {
+    color: lime;
+    text-decoration: none;
+    line-height: 10vh;
+    margin-left: 20px;
+}
+
+.nav ul {
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.nav ul li{
+    list-style: none;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.nav ul li a{
+    font-weight: 700;
+    text-decoration: none;
+    color: red;
+}
+
+.title {
+    margin-top: 10px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvasCon{
+    /* margin: auto; */
+    position: relative;
+}
+
+#board {
+    position: relative;
+    margin-top: 20px;
+    background-color: #111111;
+}
+
+
+#start-btn{
+    font-family: courier;
+    position: absolute;
+    left:40%;
+    top: 40%;
+    background-color: transparent;
+    width: 100px;
+    height: 50px;
+    color: lime;
+    margin-top: 20px;
+    text-align: center;
+    border: white 2px solid ;
+
+}
+
+.gameOverTxt {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    color: white;
+    font-family: courier;
+    font-size: 30px;
+    text-align: center;
+}
+
+.score {
+    position: absolute;
+    left: 38%;
+    top: 50%;
+    color: white;
+    font-family: courier;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*register page styling*/
+.regTitle{
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.registerpg {
+    display: flex;
+    line-height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: lime;
+}
+
+/*Login page styling*/
+.logTitle{
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.loginpg{
+    display: flex;
+    line-height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: lime;
+
+}
+
+/*Submit button styling*/
+#submitbtn{
+    margin-top: 10px;
+    font-family: courier;
+    width: 100%;
+    height: 25px;
+    background-color: #111111;
+    color: lime;
+    border: 1px white solid;
+}
+
+
+/*flash message styling*/
+.flashes {
+    display: flex;
+    color: red;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*Scorboard page styling*/
+.sbpg{
+    display: flex;
+    line-height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: lime;
+}
+
+/*Scorestatus page styling*/
+.successpg {
+    font-size: 25px;
+    margin-top: 20px;
+    color: lime;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+/*Scoreboard page styling*/
+.scoreboardTitle {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+/*Table styling of scoreboard*/
+.tableContainer{
+    display: flex;
+    line-height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.table{
+    background-color: #111111;
+    opacity: 0.9;
+    border-spacing: 0;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.tableHeader{
+    color: lime;
+    text-align: left;
+
+}
+
+.tableCell{
+    color: lime;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.tableCelld{
+    color: lime;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/*Instruction page styling*/
+.instCon{
+    background-color: #111111;
+    opacity: 0.9;
+    font-size: 20px;
+    margin-top: 20px;
+    color: lime;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.instCon h2{
+    margin-left: 20px;;
+    text-align: left;
+}
+
+.instCon p{
+    margin-left: 35px;;
+    text-align: left;
+
+}
+
+
+@media (max-width:620px) {
+    .nav, .main{
+        width: 100%;
+    }
+ }
+    

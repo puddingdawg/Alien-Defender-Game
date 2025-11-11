@@ -1,0 +1,27 @@
+{% extends "nav.html" %}
+{% block content %}
+    <div class="sbpg">
+        <h1 class="scoreboardTitle">Scoreboard</h1>
+    </div>
+    <div class="tableContainer">
+        <table class="table">
+            <tr class="tableHeader">
+                {% for header in headings %}
+                <th class="tableCell"> {{header}}</th>
+                {% endfor %}
+            </tr>
+            {%for row in data%}
+                <tr class="tableRow">
+                    {%for cell in row%}
+                        <td class="tableCelld"> {{cell}} </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+   
+    <script src="{{ url_for('static', filename='js/scoreboard.js')}}"></script>
+   
+
+{% endblock %}

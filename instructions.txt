@@ -1,0 +1,10 @@
+Name: William Choi
+
+Student Number: 1007087457
+
+Description of Site: Space Invader Video game with highest score storing capabilities and global leaderboard
+
+Features would not be obvious to Grader: 
+    1. The Score Status page is only visible to user's who have logged in onto the site.
+    2. User's score will only be stored if they are logged in and the site is programmed to
+        only store user's highest score onto the scoreboard.
